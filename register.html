@@ -6,25 +6,58 @@
   <title>Free Fire Codes</title>
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
-    body { font-family: Arial, sans-serif; background: #f9f9f9; color: #333; }
-    header { background: #111; padding: 20px 40px; display: flex; justify-content: space-between; align-items: center; }
+    html {
+      scroll-behavior: smooth;
+    }
+    body {
+      font-family: Arial, sans-serif;
+      background: #f9f9f9;
+      color: #333;
+    }
+    header {
+      background: #111;
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
     header h1 { color: #ffb800; }
-    nav a { color: white; text-decoration: none; margin-left: 20px; transition: 0.3s; }
-    nav a:hover { color: #ffb800; }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 20px;
+      transition: 0.3s;
+      background-color: #28a745;
+      padding: 12px 20px;
+      border-radius: 5px;
+    }
+    nav a:hover {
+      background-color: #218838;
+      color: #fff;
+    }
 
     .get-btn {
-      background-color: #ffb800;
-      color: #111;
-      padding: 18px 28px;
-      font-size: 18px;
+      background-color: #28a745;
+      color: #fff;
+      padding: 14px 24px;
+      font-size: 16px;
       border: none;
       border-radius: 5px;
-      margin-left: 20px;
       cursor: pointer;
       transition: background 0.3s;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      width: 260px;
     }
     .get-btn:hover {
-      background-color: #ff9200;
+      background-color: #218838;
+    }
+
+    .get-btn img {
+      height: 20px;
+      width: 20px;
     }
 
     .hero {
@@ -57,9 +90,12 @@
     }
     .card h4 { margin-bottom: 10px; color: #ff9900; }
 
-    .about {
-      background: #f1f1f1;
-      padding: 60px 40px;
+    .btn-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+      margin-top: 20px;
     }
 
     footer {
@@ -75,7 +111,7 @@
   <header>
     <h1>Free Fire Codes</h1>
     <nav>
-      <button class="get-btn" onclick="location.href='#get-code'">Get Your Code</button>
+      <a href="#register-section">Register</a>
     </nav>
   </header>
 
@@ -85,7 +121,7 @@
   </section>
 
   <section class="hero">
-    <h3>What We Offer</h3>
+    <h2>Register</h2>
     <div class="cards">
       <div class="card">
         <h4>Daily Codes</h4>
@@ -95,11 +131,22 @@
   </section>
 
   <section class="hero">
-    <h3>🎁 Get Your Code</h3>
-    <p>Click the button below to be redirected to our Free Fire code page on Facebook:</p>
-    <button class="get-btn" onclick="window.location.href='register.html'">
-      🔥 Reveal Code Now
-    </button>
+    <h2>Register with your Free Fire account</h2>
+    <p>Make sure your information is correct.</p>
+  </section>
+
+  <section class="hero" id="register-section">
+    <h3>Register</h3>
+    <div class="btn-container">
+      <button class="get-btn" onclick="window.location.href='https://www.facebook.com'">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Facebook_Logo_%282019%29.png" alt="Facebook Logo" />
+        Register with Facebook
+      </button>
+      <button class="get-btn" onclick="window.location.href='https://www.google.com'">
+        <img src="https://i.pinimg.com/736x/68/3d/9a/683d9a1a8150ee8b29bfd25d46804605.jpg" alt="Google Logo" />
+        Register with Google
+      </button>
+    </div>
   </section>
 
   <footer id="contact">
